@@ -1,3 +1,12 @@
+/*
+* File: MainFrame.java
+* Author: Boros Zoltán
+* Copyright: 2022, Boros Zoltán
+* Group: Szoft II N
+* Date: 2022-12-18
+* Github: https://github.com/BorosFather
+* Licenc: GNU GPL
+*/
 package Views;
 
 import javax.swing.BoxLayout;
@@ -7,10 +16,10 @@ import javax.swing.JFrame;
 public class MainFrame extends JFrame {
  
     TitlePanel titlePanel;
-    public AreaPanel areaPanel;
     public ApagePanel apagePanel;
-    public ReultPanel resultPanel;
     public AlphaPanel alphaPanle;
+    public AreaPanel areaPanel;
+    public ReultPanel resultPanel;
     public ButtonPanel buttonPanel;
     
     public MainFrame(){
@@ -26,7 +35,8 @@ public class MainFrame extends JFrame {
     }
 
     public void initWindow(){
-        this.setIconImage(new ImageIcon("father.png").getImage());
+        this.setTitle("rombitak");
+        this.setIconImage(new ImageIcon("/icon/father.png").getImage());
         this.setLayout(new BoxLayout(this.getContentPane(), BoxLayout.PAGE_AXIS));
         this.addComponent();
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -37,13 +47,11 @@ public class MainFrame extends JFrame {
 
     private void addComponent() {
         this.add(this.titlePanel);
-        this.add(this.areaPanel);
-        this.add(this.resultPanel);
         this.add(this.apagePanel);
         this.add(this.alphaPanle);
+        this.add(this.areaPanel);
+        this.add(this.resultPanel);
         this.add(this.buttonPanel);
-       
-
     }
 
  

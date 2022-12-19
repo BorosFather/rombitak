@@ -1,3 +1,12 @@
+/*
+* File: InputPanel.java
+* Author: Boros Zoltán
+* Copyright: 2022, Boros Zoltán
+* Group: Szoft II N
+* Date: 2022-12-18
+* Github: https://github.com/BorosFather
+* Licenc: GNU GPL
+*/
 package Views;
 
 import javax.swing.BoxLayout;
@@ -15,8 +24,8 @@ public class InputPanel extends JPanel{
         this.label = new JLabel("InputPanel");
         this.field = new JTextField();
         this.setLayout(new BoxLayout(this,BoxLayout.LINE_AXIS));
-        this.setBorder(new EmptyBorder(5,10,5,10));
-        this.label.setBorder(new EmptyBorder(0,0,0,10));
+        this.setBorder(new EmptyBorder(5,15,5,10));
+        this.label.setBorder(new EmptyBorder(0,10,0,10));
         this.addComponent();
     }
 
